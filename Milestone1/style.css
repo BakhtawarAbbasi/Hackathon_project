@@ -1,0 +1,191 @@
+/* Reset and basic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+body {
+    font-style: italic;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Resume Container */
+.resume {
+    margin: 20px auto; 
+    width: 90%; 
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto; 
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.left-section {
+    width: 30%;
+    background-color: #2e3b42;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile image */
+.left-section .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.left-section h2 {
+    margin-bottom: 15px;
+    border-top: 2px solid #ffc107;
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: "Dancing Script", sans-serif;
+    color: #ffc20b;
+    text-align: center;
+}
+
+.left-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Right Section */
+.right-section {
+    width: 70%;
+    background-color: rgb(238, 245, 245);
+    padding: 20px;
+    color: gray;
+}
+
+.right-section .header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.right-section .header h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #2e3b42;
+    font-family: "Dancing Script", sans-serif;
+}
+
+.right-section h3 {
+    color: #2e3b42;
+    margin-bottom: 10px;
+    border-top: 2px solid #FF9100;
+    font-family: "Dancing Script", sans-serif;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+.experience{
+    margin-top: 20px;
+}
+
+.right-section p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.right-section ul {
+    list-style: disc outside;
+    margin-bottom: 15px;
+}
+
+.right-section ul li {
+    margin-bottom: 5px;
+}
+
+.education li em {
+    font-size: 14px;
+    color:#2e3b42;
+}
+
+.education p {
+    margin-bottom: 5px;
+    font-size: 14px;
+
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Left Section */
+    .left-section {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        order: 1; 
+    }
+
+    .left-section .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Right Section */
+    .right-section {
+        width: 100%;
+        padding: 15px;
+        order: 2; 
+    }
+
+    /* Adjust font sizes */
+    .right-section .header h1 {
+        font-size: 24px;
+    }
+
+    .right-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .right-section p,
+    .right-section ul li {
+        font-size: 13px;
+    }
+
+    .right-section .header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-section .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-section .header h1 {
+        font-size: 20px;
+    }
+
+    .right-section h3 {
+        font-size: 1rem;
+    }
+
+    .right-section p,
+    .right-section ul li {
+        font-size: 12px;
+    }
+
+    .right-section {
+        padding: 10px;
+    }
+
+    .left-section {
+        padding: 10px;
+    }
+}
+
